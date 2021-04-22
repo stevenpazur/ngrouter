@@ -1,0 +1,77 @@
+p {
+  font-family: Lato;
+}
+.clock-container{
+
+  font-size:35px;
+  /*line-height:25px;*/
+  color:white;
+  height:100%;
+  font-weight: 500;
+
+
+}
+.clock, .clock2 {
+  top:30%;
+  background-color: #3c434c;
+  width:50%;
+  height:100%;
+  margin:10px auto;
+  padding:30px;
+}
+.clock div, .clock2 div {
+  display:inline-block;
+  background-color: #202731;
+  width:25%;
+  height: 100%;
+  text-align: center;
+}
+.clock2 {
+  background-color: #cdd5dc;
+  text-align:center;
+}
+.time{
+  width:100% !important;
+}
+:host{
+  font-family: Orbitron;
+}
+article{
+  display:inline;
+  float:right;
+  padding-left:20px;
+}
+.heroSection{
+  background-color: rgb(224, 216, 216);
+  text-align: center;
+  padding-bottom:50px;
+}
+#teamLogo{
+  display:block;
+  height:80px;
+  width:auto;
+  position:inherit;
+  float:right;
+  margin:10px;
+  border-radius:10px;
+}
+#teamMascot{
+  height:100px;
+  width:auto;
+}
+#teamSlogan{
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  transform: translate(-160px, -60%);
+}
+#bioPedro{
+  position:absolute;
+  left:10px;
+  top:170px;
+}
+#bioSteven{
+  position:absolute;
+  right:10px;
+  top:170px;
+}
