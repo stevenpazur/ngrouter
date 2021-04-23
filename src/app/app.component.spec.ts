@@ -37,9 +37,6 @@ describe('AppComponent', () => {
   it("should render team logo", () => {
     expect(compiled.querySelector('#teamLogo')).toBeDefined();
   })
-  it("should render team mascot", () => {
-    expect(compiled.querySelector('#teamMascot')).toBeDefined();
-  })
   it("should render team slogan", () => {
     expect(compiled.querySelector('#teamSlogan')).toBeDefined();
   })

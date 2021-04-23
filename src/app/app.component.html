@@ -1,39 +1,35 @@
 <div class="container">
-  <header>
+  <header class="container">
     <app-Navbar></app-Navbar>
+
   </header>
-  <div class="heroSection">
-    <img id="teamLogo" src="../assets/sombrero.png"/>
-    <h1 id="teamTitle">Team Sombrero!</h1>
-    <img id="teamMascot" src="../assets/dancingCowboy.gif"/>
-    <h3 id="teamSlogan">The toughest guys in town.</h3>
-    <article id="bioPedro">
-      <section>
-        Name: Pedro
-      </section>
-      <section>
-        Age: 25
-      </section>
-      <section>
-        Description: FSU grad
-      </section>
-    </article>
-    <article id="bioSteven">
-      <section>
-        Name: Steven
-      </section>
-      <section>
-        Age: 22
-      </section>
-      <section>
-        Description: ASU grad
-      </section>
-    </article>
+  <div class="container">
+    <div class="jumbotron" id="heroSection">
+      <div class="cardsContainer">
+        <div class="card" style="float:left;">
+          <div class="card-body">
+            <h5 class="card-title">Pedro</h5>
+            <p class="card-text">Name: Pedro.<br/>Age: 25.<br/>Description: FSU grad.</p>
+          </div>
+        </div>
+        <div class="card" style="float:right;">
+          <div class="card-body">
+            <h5 class="card-title">Steven</h5>
+            <p class="card-text">Name: Steven.<br/>Age: 22.<br/>Description: ASU grad.</p>
+          </div>
+        </div>
+      </div>
+
+      <h1 id="teamTitle"><strong>Team Sombrero</strong></h1>
+      <h3 id="teamSlogan">The toughest guys in town.</h3>
+
+    </div>
+    <div class="heroImage">
+
+    </div>
   </div>
 
   <footer>
-    <div class="clock-container clock2">
-      <span id="clockTimer">{{timeString}}</span>
-    </div>
+    <router-outlet></router-outlet>
   </footer>
 </div>

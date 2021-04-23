@@ -1,9 +1,18 @@
-<nav>
-  <ul>
-    <li><a routerLink="/home">Home</a></li>
-    <li><a routerLink="/login">Login</a></li>
-    <li><a routerLink="/subscribe">Subscribe</a></li>
-    <li><a routerLink="/signup">Sign Up</a></li>
-  </ul>
-  <router-outlet></router-outlet>
+<nav class="navbar navbar-dark bg-secondary">
+  <img id="teamLogo" src="../assets/sombrero.png"/>
+  <a class="navbar-brand" routerLink="/home">Team Sombrero</a>
+  <div id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" id="linkHome" routerLink="/home" (click)="ButtonClicked('home');"> <span class="btn btn-success">Home</span></a>
+      <a class="nav-item nav-link active" id="linkSubscribe" routerLink="/subscribe" (click)="ButtonClicked('subscribe');"> <span class="btn btn-success">Subscribe</span></a>
+      <a class="nav-item nav-link" id="linkSurvey" routerLink="/survey" (click)="ButtonClicked('survey');"><span class="btn btn-success">Survey</span></a>
+      <a class="nav-item nav-link" id="linkLogin" routerLink="/login" (click)="ButtonClicked('login');"><span class="btn btn-success">Log In</span></a>
+      <a class="nav-item nav-link" id="linkSignup" routerLink="/signup" (click)="ButtonClicked('signup');"><span class="btn btn-light">Sign Up</span></a>
+      <a class="nav-item nav-link" id="badlink" routerLink="/fakepath" (click)="ButtonClicked('fakepath');"><span class="btn btn-light">Bad link</span></a>
+
+    </div>
+    <div class="clock-container clock2">
+      <span id="clockTimer">{{timeString}}</span>
+    </div>
+  </div>
 </nav>

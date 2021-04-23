@@ -1,0 +1,7 @@
+.navContainer{
+  position: absolute;
+  top: 600px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 150px 50px 150px 50px;
+}

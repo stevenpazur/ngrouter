@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'ng-team-app';
 
   name = 'Angular 4';
-  date:Date;
+  public date:Date;
   hours:any;
   minutes:any;
   seconds:any;

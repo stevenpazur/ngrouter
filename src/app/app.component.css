@@ -2,76 +2,96 @@ p {
   font-family: Lato;
 }
 .clock-container{
-
-  font-size:35px;
+  font-size:25px;
   /*line-height:25px;*/
-  color:white;
-  height:100%;
+  color:black;
   font-weight: 500;
-
-
-}
-.clock, .clock2 {
-  top:30%;
-  background-color: #3c434c;
-  width:50%;
-  height:100%;
-  margin:10px auto;
-  padding:30px;
-}
-.clock div, .clock2 div {
-  display:inline-block;
-  background-color: #202731;
-  width:25%;
-  height: 100%;
-  text-align: center;
 }
 .clock2 {
-  background-color: #cdd5dc;
-  text-align:center;
-}
-.time{
-  width:100% !important;
+  text-align:right;
 }
 :host{
   font-family: Orbitron;
 }
-article{
-  display:inline;
-  float:right;
-  padding-left:20px;
-}
-.heroSection{
-  background-color: rgb(224, 216, 216);
+#heroSection{
+  background-color: rgb(223, 223, 223);
+  background-color: rgba(223, 223, 223, 0.95);
   text-align: center;
-  padding-bottom:50px;
+  margin:auto;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 #teamLogo{
   display:block;
   height:80px;
   width:auto;
-  position:inherit;
   float:right;
   margin:10px;
   border-radius:10px;
+  transition:1s;
+  border: 1px solid black;
 }
 #teamMascot{
-  height:100px;
-  width:auto;
+  position: relative;
+  display:inline;
+  text-align:center;
+  align-items:center;
+  justify-content: center;
 }
-#teamSlogan{
+/* #teamSlogan{
   position: absolute;
   top: 230px;
   left: 50%;
   transform: translate(-160px, -60%);
+} */
+/* #teamSlogan{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+} */
+.jumbotron{
+  padding:2rem 1rem;
+  margin-bottom:2rem;
+  background-color:#e9ecef;
+  border-radius:.3rem;
+  padding-bottom: 70px;
 }
-#bioPedro{
-  position:absolute;
-  left:10px;
-  top:170px;
+.fillHeight{
+  height: 100vh;
+  width:100vh;
+  background-color:white;
+  background-image:url("../assets/dancingCowboy.gif");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
-#bioSteven{
-  position:absolute;
-  right:10px;
-  top:170px;
+.jumbotron .card{
+  width:16rem;
+  height:9rem;
+  opacity: 0.8;
+  border-radius:15px;
+}
+.jumbotron .card:hover{
+  opacity: 1;
+  transition: 0.5s;
+}
+#teamLogo:hover{
+  padding-right:30px;
+  background-color: rgb(128, 233, 7);
+  transition: 1s;
+}
+header{
+  width:100vh;
+  /* background-color:#fbdd04; */
+}
+#clockTimer{
+  font-size:60px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+.heroImage{
+  /* background-image:url("../assets/dancingCowboy.gif");
+  background-repeat: no-repeat;
+  background-size: 100%; */
+  background-color:red;
+  width: 100%;
+  /* height:100%; */
 }

@@ -11,6 +11,7 @@ import { NotFoundComponent } from './NotFound/NotFound.component';
 import { SignUpComponent } from './SignUp/SignUp.component';
 import { SubscribeComponent } from './Subscribe/Subscribe.component';
 import { SurveyComponent } from './Survey/Survey.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { SurveyComponent } from './Survey/Survey.component';
    ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,3 +1,30 @@
-<p>
-  Survey works!
-</p>
+<form class="navContainer">
+  <div class="container">
+  <div class="form-group">
+    *We care about your data.  Please see <a routerLink="/home" class="link-warning">privacy policy</a>.
+    <input type="text" placeholder="First name" size="15">
+    <input type="text" placeholder="Last name" size="15">
+    <input type="email" placeholder="Email" size="15">
+  </div>
+  <div class="form-group">
+    Pick your favorite
+    <select id="exampleFormControlSelect1" width="150px">
+      <option>Chocolate</option>
+      <option>Vanilla</option>
+      <option>Cherry</option>
+      <option>Neopolitan</option>
+    </select>
+  </div>
+  <div class="form-group">
+    Any additional comments?
+    <textarea rows="3" size="15"></textarea>
+  </div>
+  <div>
+    <input type="submit" value="Submit">
+  </div>
+  Pick your favorite image:
+  <div class="form-group">
+    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+  </div>
+  </div>
+</form>

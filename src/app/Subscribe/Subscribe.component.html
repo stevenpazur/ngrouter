@@ -1,4 +1,8 @@
-<div class="navContainer">
-  <h1>Hello there!</h1>
-  <h2>General Kenobi</h2>
-</div>
+<form class="navContainer">
+  <div class="container">
+  <input type="text" id="name" placeholder="Email" size="15"
+       required
+       [(ngModel)]="model.email" name="email" (keydown)="enable();">
+  <button class="btn btn-primary" type="submit" [disabled]="formNotFilledOut">Subscribe!</button>
+  </div>
+</form>
